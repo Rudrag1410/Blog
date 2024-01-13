@@ -1,9 +1,7 @@
-## This is made using React.js
+## Description: Created a responsive blog site with React.js, enabling users to read, edit, and delete posts.
 
-## I used appwrite as a backend service
+## Tech Stack: Utilized Appwrite for backend, Redux Toolkit for state management, and Tailwind CSS for styling.
 
-## reduxjs/toolkit for state managment
+## Key Features: Integrated TinyMCE for rich-text editing and implemented a user-friendly login form using React Hook Form
 
-## Used tailwind css for styling
-
-## USING REACT HOOK FORM FROM THE FORM IN THIS PROJECT === LOGIN FORM
+## Key Learning: Gained proficiency in writing clean, adaptable code, ensuring easy backend service transitions for future project iterations.
