@@ -56,8 +56,8 @@ const Header = () => {
                 </li>
               ) : null
             )}
-            // Is code ka mtlb hai agar authStatus true hoga tbhi () yeh wala
-            code run hoga wrna nhi
+            {/* // Is code ka mtlb hai agar authStatus true hoga tbhi () yeh wala
+            code run hoga wrna nhi */}
             {authStatus && (
               <li>
                 <LogoutBtn />

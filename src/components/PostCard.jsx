@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 const PostCard = ({ $id, title, featuredImage }) => {
   //APP WRITE PROPS
+  // ITS $ID NOT ID BECAUSE OF APPWRITE
   return (
     <Link to={`/post/${$id}`}>
       <div className="w-full bg-gray-100 rounded-xl p-4">

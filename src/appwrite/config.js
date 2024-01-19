@@ -13,6 +13,7 @@ export class Service {
       this.databases = new Databases(this.client);
       this.bucket = new Storage(this.client);
    }
+
    // We are using slug as document id 
    //Create Post Function
 
@@ -129,8 +130,6 @@ export class Service {
    }
 
 }
-
-
 
 const service = new Service()
 export default service
