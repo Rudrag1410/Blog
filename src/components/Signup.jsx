@@ -14,16 +14,17 @@ const Signup = () => {
   const create = async (data) => {
     setError("");
     try {
-      const userData = await authService.createAccount(data);
-      if (userData) {
-        const userData = await authService.getCurrentUser();
-        if (userData) dispatch(login(userData));
+      const createdUserData = await authService.createAccount(data);
+      if (createdUserData) {
+        const currentUserData = await authService.getCurrentUser();
+        if (currentUserData) dispatch(login(currentUserData));
         navigate("/");
       }
     } catch (error) {
       setError(error.message);
     }
   };
+
   return (
     <div className="flex items-center justify-center">
       <div
@@ -57,6 +58,11 @@ const Signup = () => {
               })}
             />
             <Input
+              label="Email:"
+              placeholder="Enter Your email"
+              {...register("email")}
+            />
+            <Input
               label="Password: "
               type="password"
               placeholder="Enter your password"
@@ -64,6 +70,7 @@ const Signup = () => {
                 required: true,
               })}
             />
+
             <Button type="submit" className="w-full">
               Create Account
             </Button>
